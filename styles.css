@@ -17,7 +17,7 @@ h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   font-weight: normal;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 h3 {
@@ -27,6 +27,7 @@ h3 {
 
 p {
   line-height: 2;
+  color: #afafb9;
 }
 
 hr {
@@ -68,29 +69,36 @@ a:hover {
     background-position: 0% 50%;
   }
 }
-.profile{
+.profile {
+  display: inline-flex;
+}
+
+.profile-text {
+  margin-top: 150px;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.profile-img {
   display: flex;
-}
-
-.profile-text{
-  margin-top: 100px;
-  display: flex-inline;
-  align-items: end;
-}
-
-.profile-img{
-  display: flex-inline ;
-}
-.profile-img img{
-  margin-top: 150px ;
   width: 70%;
-justify-content: left;
 }
-
+.profile-img img {
+  margin-top: 150px;
+  width: 70%;
+  justify-content: center;
+}
 
 .middle-container {
-  background: rgb(18,17,36);
-background: linear-gradient(180deg, rgba(18,17,36,1) 0%, rgba(21,12,41,0.9948354341736695) 48%, rgba(18,18,36,1) 100%);
+  background: rgb(18, 17, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(18, 17, 36, 1) 0%,
+    rgba(21, 12, 41, 0.9948354341736695) 48%,
+    rgba(18, 18, 36, 1) 100%
+  );
 }
 
 .bottom-container {
@@ -109,7 +117,7 @@ background: linear-gradient(180deg, rgba(18,17,36,1) 0%, rgba(21,12,41,0.9948354
 }
 
 .intro {
-  width: 30%;
+  width: 100%;
   margin: auto;
   align-self: center;
 }
@@ -125,27 +133,16 @@ background: linear-gradient(180deg, rgba(18,17,36,1) 0%, rgba(21,12,41,0.9948354
   padding: 20px 0;
 }
 
-.top-cloud {
-  position: absolute;
-  right: 300px;
-  top: 40px;
-}
-
-.bottom-cloud {
-  position: absolute;
-  left: 250px;
-  bottom: 300px;
-}
-
 .code-img {
-  width: 25%;
-  float: left;
-  margin-right: 30px;
-}
+  width: 100%;
+  float: right;
+  margin-right: 40px;
+  margin-top: 60px;}
 
-.chilli-img {
-  width: 50%;
-  margin-left: 30px;
+.algorithm-img {
+  float: left;
+  width: 70%;
+  margin-top: 50px;
 }
 
 .btn {
@@ -184,16 +181,3 @@ background: linear-gradient(180deg, rgba(18,17,36,1) 0%, rgba(21,12,41,0.9948354
   text-align: left;
   row-gap: 2rem;
 }
-
-/* .typing {
-    grid-area: 1 / 1 / 3 / 3;
-  }
-  .coding {
-    grid-area: 1 / 1 / 2 / 2;
-  }
-  .chillies {
-    grid-area: 1 / 2 / 2 / 3;
-  }
-  .hot-wings {
-    grid-area: 2 / 1 / 3 / 2;
-  } */
